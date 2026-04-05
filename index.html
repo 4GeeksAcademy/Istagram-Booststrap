@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istagram con Boostrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bbccf10366.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark d-flex align-items-center gap-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Monster_Hunter_logo_black.svg" alt="logo"
+                    width="70" height="70">
+                <strong>Tablon de anuncios</strong>
+            </a>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Publicar mision
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        ⚙️
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Misiones</a></li>
+                        <li><a class="dropdown-item" href="#">Rango</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Cerrar sesion</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Titulo de la mision</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Descripción:</label>
+                    <textarea class="form-control" placeholder="Cazar, capturar..."></textarea>
+
+                    <div class="mt-3">
+                        <button class="btn btn-light">📷</button>
+                        <button class="btn btn-light">📍</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardad cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fa-solid fa-stop"></i></button>
+            </li>
+
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+
+            <div class="tab-pane fade show active p-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/0/0a/MHW-Barroth_Icon.png/revision/latest?cb=20210724004639"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/3/30/MHW-Icono_Tobi-Kadachi.png/revision/latest?cb=20210823124001&path-prefix=es"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/9/94/MHW-Icono_Odogaron.png/revision/latest?cb=20210823123246&path-prefix=es"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://monsterhunterwiki.org/images/d/dc/MHWilds-Rey_Dau_Icon.webp"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/8/8c/MHW-Rathalos_Icon.png/revision/latest?cb=20210724001238"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/4/49/MHWI-Savage_Deviljho_Icon.png/revision/latest?cb=20210724012302"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://monsterhunterwiki.org/images/f/f3/MHWI-Stygian_Zinogre_Icon.png"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/1/1e/MHW-Icono_Teostra.png/revision/latest?cb=20210823124625&path-prefix=es"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary">
+                            <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/2/2b/MHWI-Icono_Fatalis.png/revision/latest?cb=20210823125033&path-prefix=es"
+                                class="card-img-top" alt="imagen">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="Contenedor">
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>Textarudo como una roca</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunter/images/0/0a/MHW-Barroth_Icon.png/revision/latest?cb=20210724004639"
+                                height="100%" width="100%">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Chica de la Arena
+                            </p>
+                        </div>
+
+                        </p>
+                        <p class="ContenedorCajaPostDescripcion">
+                            Un nuevo adversario: ¡Barroth, el embestidor, el rompecráneos!
+                            ¡Si pierdes contra él, acabaras hecho papilla!
+
+                        </p>
+
+                    </div>
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>La situación actual</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunterespanol/images/3/30/MHW-Icono_Tobi-Kadachi.png/revision/latest?cb=20210823124001&path-prefix=es"
+                                height="100%" width="100%">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Chica de la Arena
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            ¡No me toques! ¡No me toques! *Zap* ¡He dicho que no me toques! Apareció un maldito
+                            Tobi-Kadachi y
+                            ahora no puedo tocar nada sin que me dé calam... *zap* ¡Auu!
+
+                        </p>
+                    </div>
+
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>Esa cecina es cosa fina</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunterespanol/images/9/94/MHW-Icono_Odogaron.png/revision/latest?cb=20210823123246&path-prefix=es"
+                                height="812.7px" width="812.7px">
+                        </a>
+
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Ecólogo jefe
+                            </p>
+
+                        </div>
+
+                        <p class="ContenedorCajaPostDescripcion">
+                            Le tengo dicho a cierto erudito que se modere con la cecina de Astera, peroni caso...
+                            ¡hasta que se ha liado! Un Odogaron le ha robado las provisiones, ¡y ahora amenaza con
+                            dejarlo todo!
+
+                        </p>
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>Un destello silencioso</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen" src="https://monsterhunterwiki.org/images/d/dc/MHWilds-Rey_Dau_Icon.webp"
+                                height="812.7px" width="812.7px">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Caravanero
+                            </p>
+
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            Se ha avistado un poderoso Rey Dau en los Llanos Barlomento. Solo unos pocos cazadores de
+                            élite están equipados para esta misión. Que tengáis suerte cuando intentéis ser uno de los
+                            pocos elegidos
+
+                        </p>
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>Tengamos la fiesta en paz</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunter/images/8/8c/MHW-Rathalos_Icon.png/revision/latest?cb=20210724001238"
+                                height="812.7px" width="812.7px">
+                        </a>
+
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Ecólogo jefe
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            ¡Cada vez que el equipo de campo quiere marcar a un Aptonoth para seguir su comportamiento,
+                            aparece este aguafiestas e interrumpe el trabajo! ¡Parece que lo haga a proposito!
+                        </p>
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>La madre de todos los pepinos</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunter/images/4/49/MHWI-Savage_Deviljho_Icon.png/revision/latest?cb=20210724012302"
+                                height="812.7px" width="812.7px">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Recolector jefe
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+
+                            ¡¿Quién dejó suelto a este pepino con dientes?! ¡No podemos recolectar nada mientras este
+                            Deviljho siga campando a sus anchas!
+
+                        </p>
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>Lobo infernal</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://monsterhunterwiki.org/images/f/f3/MHWI-Stygian_Zinogre_Icon.png"
+                                height="812.7px" width="812.7px">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Hombre asustado
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            He visto al lobo negro. No es un Zinogre normal... está envuelto en una electricidad roja y
+                            maldita.
+                            Si escuchas un aullido que proviene del mismisimo infierno y ves luces de color sangre entre
+                            la
+                            nieve... ¡CORRE! Es el fin.
+
+                        </p>
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>La marca del sol</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunterespanol/images/1/1e/MHW-Icono_Teostra.png/revision/latest?cb=20210823124625&path-prefix=es"
+                                height="812.7px" width="812.7px">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Valiente de la 4.ª Flota
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            EL Maestro cazador y yo intentamos acabar con un Teostra, pero no hemos podido con él.
+                            ¡Necesitamos ayuda en el Lecho de los Ancianos! y "ayuda" significa... ¡que lo caces TÚ!
+
+                        </p>
+
+                    </div>
+
+                    <div class="ContenedorCaja">
+                        <div class="ContenedorCajaPost">
+                            <div class="ContenedorCajaPostTitulo">
+                                <h1>El dragon negro</h1>
+                            </div>
+                            <div class="ContenedorCajaPostFecha">
+                                <i class="fa-solid fa-question"></i>
+                                <i class="fa-solid fa-question"></i>
+                                <i class="fa-solid fa-question"></i>
+                                <i class="fa-solid fa-question"></i>
+                                <i class="fa-solid fa-question"></i>
+
+                            </div>
+
+                        </div>
+                        <a class="ContenedorCajaImagen">
+                            <img alt="Imagen"
+                                src="https://static.wikia.nocookie.net/monsterhunterespanol/images/2/2b/MHWI-Icono_Fatalis.png/revision/latest?cb=20210823125033&path-prefix=es"
+                                height="812.7px" width="812.7px">
+                        </a>
+                        <div class="ContenedorCajaCliente">
+                            <p class="ContenedorCajaClienteCliente">
+                                Cliente:
+                            </p>
+                            <p class="ContenedorCajaClienteNombre">
+                                Comandante
+                            </p>
+                        </div>
+                        <p class="ContenedorCajaPostDescripcion">
+                            No es un dragón, es el fin de los tiempos. Sus llamas funden la roca y su aliento convierte
+                            el acero en charcos. El Castillo de Schrade cayó en una sola noche... y nosotros seremos los
+                            siguientes.
+                            Si ves una sombra negra que oculta el sol, no luches. Solo corre. El Dios de todos los
+                            Monstruos ha despertado.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

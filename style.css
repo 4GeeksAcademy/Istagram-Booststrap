@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor {
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+
+.ContenedorCaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin: 50px;
+    border: 1px solid #ccc;
+    max-width: 800px;
+}
+
+
+.ContenedorCajaPost {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+
+}
+
+.ContenedorCajaPostTitulo {
+    display: flex;
+    margin-left: 20px;
+
+
+}
+
+.ContenedorCajaPostFecha {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.ContenedorCajaPostDescripcion {
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.ContenedorCajaImagen {
+    background-color: burlywood;
+
+}
+
+.ContenedorCajaCliente {
+    display: flex;
+    margin-left: 10px;
+}
+
+.ContenedorCajaClienteCliente {
+    color: rgb(255, 123, 0);
+}
+
+
+.ContenedorCajaClienteNombre {
+    margin-left: 50px;
+}
